@@ -40,7 +40,7 @@ const ES6Patterns = window.ES6PatternsAPI;
  
 
 
-### `Singleton = ES6Patterns.Singleton`
+**`Singleton = ES6Patterns.Singleton`**
 
 
 **Type:** `Class`
@@ -53,7 +53,7 @@ const ES6Patterns = window.ES6PatternsAPI;
  
 
 
-### `Singleton.getUniqueStore()`
+**`Singleton.getUniqueStore()`**
 
 
 **Access:** `Static`
@@ -73,7 +73,7 @@ This method is aimed for internal usage but it is available for anyone too.
  
 
 
-### `Singleton.getter(String:key, Function:initializer)`
+**`Singleton.getter(String:key, Function:initializer)`**
 
 
 **Access:** `Static`
@@ -96,7 +96,7 @@ This method also provides a lazy-loading initialization of the singleton values,
  
 
 
-### `Singleton.setter(String:key)`
+**`Singleton.setter(String:key)`**
 
 
 **Type:** `Method`
@@ -118,7 +118,7 @@ The function also returns the current value of the `key` in the `store`.
  
 
 
-### `Singleton.get(key, initializer = () => undefined)`
+**`Singleton.get(key, initializer = () => undefined)`**
 
 
 **Type:** `Method`
@@ -140,7 +140,7 @@ This method returns the value of the provided `key` in the `store`.
  
 
 
-### `Singleton.set(String:key, Any:value)`
+**`Singleton.set(String:key, Any:value)`**
 
 
 **Type:** `Method`

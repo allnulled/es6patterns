@@ -40,7 +40,7 @@
 
 /**
  * 
- * ### `Singleton = ES6Patterns.Singleton`
+ * **`Singleton = ES6Patterns.Singleton`**
  * 
  * @type `Class`
  * @description A `Singleton Pattern` implementation scoped *per context* (`window` or `global`).
@@ -51,7 +51,7 @@ class Singleton {
 
 	/** 
 	 * 
-	 * ### `Singleton.getUniqueStore()`
+	 * **`Singleton.getUniqueStore()`**
 	 * 
 	 * @access `Static`
 	 * @type `Method`
@@ -72,7 +72,7 @@ class Singleton {
 	
 	/** 
 	 * 
-	 * ### `Singleton.getter(String:key, Function:initializer)`
+	 * **`Singleton.getter(String:key, Function:initializer)`**
 	 * 
 	 * @access `Static`
 	 * @type `Method`
@@ -96,7 +96,7 @@ class Singleton {
 
 	/** 
 	 * 
-	 * ### `Singleton.setter(String:key)`
+	 * **`Singleton.setter(String:key)`**
 	 * 
 	 * @type `Method`
 	 * @access `Static`
@@ -118,7 +118,7 @@ class Singleton {
 
 	/** 
 	 * 
-	 * ### `Singleton.get(key, initializer = () => undefined)`
+	 * **`Singleton.get(key, initializer = () => undefined)`**
 	 * 
 	 * @type `Method`
 	 * @access `Static`
@@ -135,7 +135,7 @@ class Singleton {
 
 	/** 
 	 * 
-	 * ### `Singleton.set(String:key, Any:value)`
+	 * **`Singleton.set(String:key, Any:value)`**
 	 * 
 	 * @type `Method`
 	 * @access `Static`
