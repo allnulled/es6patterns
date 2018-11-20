@@ -26,12 +26,6 @@
  * const ES6Patterns = window.ES6PatternsAPI;
  * ```
  * 
- * ### Examples
- * 
- * The API is decoupled in different `design patterns` and similar `utilities` under the API object.
- * 
- * To see more of each example, take a look to the `test` folder. Tests are written using `mocha` and `chai`.
- * 
  * ## API
  * 
  * 
@@ -153,6 +147,12 @@ class Singleton {
 }
 
 /**
+ * 
+ * ### Examples
+ * 
+ * The API is decoupled in different `design patterns` and similar `utilities` under the API object.
+ * 
+ * To see more of each example, take a look to the `test` folder. Tests are written using `mocha` and `chai`.
  * 
  * # Commands
  * 

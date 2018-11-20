@@ -25,12 +25,6 @@ Or:
 const ES6Patterns = window.ES6PatternsAPI;
 ```
 
-### Examples
-
-The API is decoupled in different `design patterns` and similar `utilities` under the API object.
-
-To see more of each example, take a look to the `test` folder. Tests are written using `mocha` and `chai`.
-
 ## API
 
 
@@ -161,6 +155,12 @@ This method sets the `value` to the provided `key` in the `store`.
 
  
 
+
+### Examples
+
+The API is decoupled in different `design patterns` and similar `utilities` under the API object.
+
+To see more of each example, take a look to the `test` folder. Tests are written using `mocha` and `chai`.
 
 # Commands
 
