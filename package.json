@@ -4,6 +4,7 @@
   "description": "Set of design patterns and similar utilities for ES6 syntax.",
   "main": "src/es6patterns.js",
   "scripts": {
+    "up": "npm run build && npm run upload",
     "upload": "npm shrinkwrap && git add src/* test/* package.json README.md npm-shrinkwrap.json && git commit && git push",
     "docs": "javadoc -i src/es6patterns.univ.js -o README.md -f markdown",
     "build": "npm run universalize && npm run docs && npm run test",
