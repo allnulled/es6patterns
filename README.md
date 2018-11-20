@@ -1,7 +1,7 @@
  
 
 
-# `es6patterns`
+# es6patterns
 
 Set of design patterns and similar utilities for EcmaScript6 syntax (for browsers and `node.js`).
 
@@ -11,15 +11,17 @@ Set of design patterns and similar utilities for EcmaScript6 syntax (for browser
 
 ## Usage
 
-### Get the API:
+Get the API:
 
 Once you install the module, either with `node.js`, `browserify`, `webpack`, or simply a `<script>` tag in the `html` page, to get the API you can:
+
+a) Via `require`/`import`, then:
 
 ```js
 const ES6Patterns = require("es6patterns");
 ```
 
-Or:
+b) Via `<script src=...>`, then:
 
 ```js
 const ES6Patterns = window.ES6PatternsAPI;
@@ -156,7 +158,7 @@ This method sets the `value` to the provided `key` in the `store`.
  
 
 
-### Examples
+# Examples
 
 The API is decoupled in different `design patterns` and similar `utilities` under the API object.
 
