@@ -4,6 +4,10 @@
  * 
  * # es6patterns
  * 
+ * 
+ * ![](https://img.shields.io/badge/es6patterns-v1.0.0-green.svg) ![](https://img.shields.io/badge/coverage-%2B95%25-green.svg) 
+ * 
+ * 
  * Set of design patterns and similar utilities for EcmaScript6 syntax (for browsers and `node.js`).
  * 
  * ## Installation

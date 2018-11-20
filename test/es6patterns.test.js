@@ -3,7 +3,7 @@ const {assert, expect} = require("chai");
 
 describe("ES6Patterns class", function() {
 	
-	const ES6Patterns = require(__dirname + "/../src/es6patterns.js");
+	const ES6Patterns = require(__dirname + "/../src/es6patterns.univ.js");
 
 	before(function() {
 		require("rimraf").sync(__dirname + "/example-for-singleton.js");
@@ -20,12 +20,17 @@ describe("ES6Patterns class", function() {
 		it("can generate singleton getters", function(doneTest) {
 			this.timeout(10000);
 			const getter = Singleton.getter("my (singleton's) secret key", () => 800);
+			expect(getter()).to.equal(800);
 			setTimeout(doneTest, 1200);
 		});
 
 		it("can generate singleton setters", function(doneTest) {
 			this.timeout(10000);
-			const setter = Singleton.setter("my (singleton's) secret key");
+			const getter = Singleton.getter("my (singleton's) secret key 2");
+			expect(getter()).to.equal(undefined);
+			const setter = Singleton.setter("my (singleton's) secret key 2");
+			expect(setter(700)).to.equal(700);
+			expect(getter()).to.equal(700);
 			setTimeout(doneTest, 1200);
 		});
 
@@ -36,7 +41,7 @@ describe("ES6Patterns class", function() {
 			const set = Singleton.setter("KEY");
 			const file = __dirname + "/example-for-singleton.js";
 			const code = `
-const { Singleton } = require(__dirname + "/../src/es6patterns.js");
+const { Singleton } = require(__dirname + "/../src/es6patterns.univ.js");
 const store = {
 	get: Singleton.getter("KEY", () => ${INITIAL_VALUE}),
 	set: Singleton.setter("KEY")

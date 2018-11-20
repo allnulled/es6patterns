@@ -9,7 +9,8 @@
     "docs": "javadoc -i src/es6patterns.univ.js -o README.md -f markdown",
     "build": "npm run universalize && npm run docs && npm run test",
     "universalize": "js-export -i src/es6patterns.univ.js -o src/es6patterns.js",
-    "test": "mocha test/**/*.test.js"
+    "test": "mocha test/**/*.test.js",
+    "coverage": "nyc --reporter=html mocha test/**/*.test.js"
   },
   "keywords": [],
   "author": "",
